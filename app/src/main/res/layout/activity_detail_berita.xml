@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailBeritaActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeToolbar"
+        android:background="@drawable/grad"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:text="News"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="24dp" />
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--android:layout_marginRight="18dp"-->
+            <!--android:src="@drawable/ic_users"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/imageJumpProfile"-->
+            <!--/>-->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@id/relativeToolbar"
+        android:id="@+id/detailImage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news_satu"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/detailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="All About Bdg"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_below="@id/detailTitle"
+        android:id="@+id/detailDesc"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Users Played"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:padding="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <ImageView
+            android:id="@+id/detailCallCenter"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_call"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:text="Contact Call Center \nUBSI Bandung (022) 7100124"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

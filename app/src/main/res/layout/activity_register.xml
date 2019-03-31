@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/color_blue">
+
+
+            <ImageView
+                android:id="@+id/img_taksbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_left_arrow" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="30sp"
+                android:layout_marginLeft="55dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:padding="24dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before you want to sign in, you must
+            to Register and fill this from"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/txt_emailregister"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/txt_passwordregister"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"/>
+            <EditText
+                android:id="@+id/txt_retyperegister"
+                android:hint="Retype Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"/>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:background="@color/color_blue"
+                android:text="sign up"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+
+            <TextView
+                android:text="Have an account"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_btnlogin"
+                android:text="Login"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/color_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
