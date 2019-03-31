@@ -28,6 +28,7 @@ public class DetailBeritaActivity extends AppCompatActivity {
     TextView detailDesc;
     @BindView(R.id.detailCallCenter)
     ImageView detailCallCenter;
+    //tesdetail
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
